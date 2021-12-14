@@ -1,0 +1,397 @@
+@charset "utf-8";
+
+.topheader{
+ background-color: rgba(8, 63, 136, .9);
+ height:60px;
+}
+
+
+#logo{
+padding: 15px 15px 15px 15px;	
+	
+}
+
+#header{
+	background-color: rgb(174, 209, 0);
+	padding-right:2%;
+}
+li {
+	display: inline;
+	}
+	
+	@media screen and (max-width:750px){
+	.fl_left, .fl_right{display:block; float:none;}}
+	
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+p{
+	font-size:21px;
+	padding: 35px 0 0 0;
+	text-decoration: none;
+}
+#logotitle a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{padding: 55px 0 0 0;}
+#mainav ul.clear{margin-top:3px;}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro1{height:60px;background-color: rgba(8, 63, 136, .9);border-radius: 25px;}
+#pageintro2{height:60px;background-color: rgba(8, 63, 136, .9);margin-top:20px;border-radius: 25px;}
+
+ li article{display:block; max-width:100%;max-height:100%; margin:0 auto; text-align:center;}
+#pageintro li article *{margin:0;}
+
+#pageintro li p:first-of-type{margin-bottom:10px; font-style:italic;}
+#pageintro li .heading{margin-bottom:30px; font-size:3rem; word-wrap:break-word;}
+#pageintro li p:nth-of-type(2){line-height:1.5rem;}
+#pageintro li footer{margin-top:40px;}
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav a:hover, #mainav li:hover > a{color:#C5A059; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#C5A059;}
+#mainav form select{color:#FFFFFF; background-color:#26272B; border-color:rgba(255,255,255,.2);}
+
+/* FMI */
+#logotitle a{color:inherit;}
+#logotitle  a, #logotitle a:hover, #logotitle li:hover > a{color:#C5A059; background-color:#FFFFFF;}
+#logotitle a, #logotitle a{color:#000000; border-color:rgba(0,0,0,.6);}
+#logotitle li li:hover > a, #logotitle .active .active > a{color:#FFFFFF; background-color:#C5A059;}
+#logotitle form select{color:#FFFFFF; border-color:rgba(255,255,255,.2);}
+
+
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+
+/* Content */
+
+The "hoc" class is a generic class used to centre a containing element horizontally
+It should be used in conjunction with a second class or ID
+*/
+.hoc{display:block; margin:0 auto;}
+
+
+/* HTML 5 Overrides
+--------------------------------------------------------------------------------------------------------------- */
+address, article, aside, figcaption, figure, footer, header, main, nav, section{display:block; margin:0; padding:0;}
+
+
+/* Grid
+--------------------------------------------------------------------------------------------------------------- */
+.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:inline-block; float:left; margin:0 0 0 3.06748466257669%; list-style:none;}
+
+.first{margin-left:0; clear:left;}
+
+.one_quarter{width:22.69938650306748%;}
+.one_third{width:31.28834355828221%;}
+.one_half, .two_quarter{width:48.46625766871166%;}
+.two_third{width:65.6441717791411%;}
+.three_quarter{width:74.23312883435584%;}
+
+
+/* Spacing
+--------------------------------------------------------------------------------------------------------------- */
+.btmspace-10{margin-bottom:10px;}
+.btmspace-15{margin-bottom:15px;}
+.btmspace-30{margin-bottom:30px;}
+.btmspace-50{margin-bottom:50px;}
+.btmspace-80{margin-bottom:80px;}
+
+.inspace-5{padding:5px;}
+.inspace-10{padding:10px;}
+.inspace-15{padding:15px;}
+.inspace-30{padding:30px;}
+.inspace-50{padding:50px;}
+.inspace-80{padding:80px;}
+
+.overlay{color:#FFFFFF; background-color:rgba(8, 63, 136, .9); width:80%;height:80%;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlayEvents{color:#FFFFFF; background-color:rgba(8, 63, 136, .9); width:150%;height:80%;}
+
+
+.overlay::after{display:block; position:absolute; top:0; left:0; width:100%; height:100%; content:""; z-index:-1;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(8, 63, 136, .9);
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	width:50%;
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	font-size:22px;
+}
+/* Style the tab */
+div.tab_program {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(8, 63, 136, .9);
+}
+
+/* Style the buttons inside the tab */
+div.tab_program button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	width:25%;
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+}
+
+/* Change background color of buttons on hover */
+div.tab_program button:hover {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	
+}
+
+/* Create an active/current tablink class */
+div.tab_program button.active {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	font-size:22px;
+}
+div.tab_courses {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: rgba(8, 63, 136, .9);
+}
+
+/* Style the buttons inside the tab */
+div.tab_courses button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	width:50%;
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+}
+
+/* Change background color of buttons on hover */
+div.tab_courses button:hover {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	
+}
+
+/* Create an active/current tablink class */
+div.tab_courses button.active {
+    background-color: rgba(8, 100, 136, .1);
+	color:rgb(255, 255, 255);
+	text-transform:uppercase;
+	font-size:22px;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+	
+.demo{width:50px; height:50px;}
+}
+.bottomfooter {
+	
+ background-color: rgba(8, 63, 136, .9);
+ height:10%;
+}
+
+#contacts {
+	width:50%;
+	font-size:10px;
+	margin-left:25%;
+	color:rgb(255, 255, 255);
+}
+#tabletitle {
+	font-size:12px;
+	text-decoration: underline;
+}
+
+#eventstab{ width:55%; margin-left:5%; margin-bottom:5%; height:120%;background-color: rgba(8, 63, 136, .9);}
+
+/* Program */
+.purpose{
+	margin-top:3%;
+background-color:rgba(8, 63, 136, .9);
+height:40px;
+font-size:25px;
+text-align:center;
+color:white;
+text-transform:uppercase;
+ }
+ 
+ .purpose_text{
+	 font-size:16px;
+	 width:80%;
+	 margin-left:10%;
+	 color:#494949;
+	 
+ }
+  .purpose_text_home{
+	 font-size:16px;
+	 width:80%;
+	
+	 color:#494949;
+	 
+ }
+ #purpose_li{
+	 font-size:16px;
+	 width:80%;
+	 margin-left:10%;
+	 color:#494949;
+ }
+.purpose_text tr td:nth-child(n+2) { 
+    
+	text-align:center;
+}
+
+.required_text tr td:nth-child(n+2) { 
+    padding:1%;
+	text-align:center;
+}
+.required_text{
+	 font-size:16px;
+	 width:80%;
+	 margin-left:10%;
+	 color:#494949;
+}
+.optional_text tr td:nth-child(n+2) { 
+    padding:1%;
+	text-align:left;
+	
+}
+.optional_text{
+	 font-size:16px;
+	 width:80%;
+	 margin-left:10%;
+	 color:#494949;
+}
+ #map {
+        height: 400px;
+        width: 100%;
+       }
+	   
+#login form {
+  width: 70%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Full-width inputs */
+#login form input[type=text],[type=password]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#login form button[type=submit] {
+  background-color: rgba(8, 63, 136, .9);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Add a hover effect for buttons */
+#login form button[type=submit]:hover {
+  opacity: 0.8;
+}
+
+body{
+	width:90%;
+	padding-left:10%;
+}
